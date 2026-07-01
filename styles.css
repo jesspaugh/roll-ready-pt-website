@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+  background: #4171f9;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.brand-logo {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 2rem;
+}
+
+.splash {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.logo span {
+  color: #ffffff;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.subtext {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2.5rem;
+}
+
+.contact {
+  font-size: 1rem;
+}
+
+.contact a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  margin: 0 12px;
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 2.25rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .divider {
+    display: none;
+  }
+}
