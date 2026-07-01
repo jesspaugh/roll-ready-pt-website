@@ -1,11 +1,3 @@
-:root {
-  --blue: #4171f9;
-  --white: #ffffff;
-  --ink: #1c1f26;
-  --muted: #5b6272;
-  --border: #e3e7f0;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -14,114 +6,62 @@
 
 body {
   font-family: "Jost", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: 400;
-  color: var(--ink);
-  background: var(--white);
-}
-
-a {
-  color: inherit;
-}
-
-/* Header */
-
-.site-header {
-  background: var(--blue);
-  padding: 16px 24px;
-}
-
-.site-header-inner {
-  max-width: 1080px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-}
-
-.brand-mark {
-  width: 40px;
-  height: 40px;
-}
-
-.brand-name {
   font-weight: 700;
-  font-size: 1.15rem;
-  color: var(--white);
+  background: #4171f9;
+  color: #ffffff;
+  min-height: 100vh;
 }
 
-.brand-name span {
-  color: var(--white);
+.brand-logo {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 2rem;
 }
 
-.nav {
+.splash {
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-.nav a {
-  color: var(--white);
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.95rem;
-  opacity: 0.85;
-  padding-bottom: 2px;
-  border-bottom: 2px solid transparent;
-}
-
-.nav a:hover,
-.nav a.active {
-  opacity: 1;
-  border-bottom-color: var(--white);
-}
-
-/* Footer */
-
-.site-footer {
-  background: var(--blue);
-  color: var(--white);
-  padding: 32px 24px;
-  margin-top: 64px;
-}
-
-.site-footer-inner {
-  max-width: 1080px;
-  margin: 0 auto;
+  justify-content: center;
+  padding: 24px;
   text-align: center;
 }
 
-.site-footer .brand-name {
-  display: block;
-  font-size: 1.1rem;
-  margin-bottom: 12px;
+.content {
+  max-width: 600px;
 }
 
-.site-footer .contact {
-  margin-bottom: 12px;
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
 }
 
-.copyright {
-  font-size: 0.8rem;
-  opacity: 0.75;
+.logo span {
+  color: #ffffff;
 }
 
-/* Shared contact styling (used in footer) */
+.tagline {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.subtext {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2.5rem;
+}
 
 .contact {
   font-size: 1rem;
 }
 
 .contact a {
+  color: #ffffff;
   text-decoration: none;
   font-weight: 700;
 }
@@ -132,131 +72,15 @@ a {
 
 .divider {
   margin: 0 12px;
-  opacity: 0.75;
-}
-
-/* Homepage hero */
-
-.hero {
-  background: var(--blue);
-  color: var(--white);
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 64px 24px;
-  text-align: center;
-}
-
-.hero-content {
-  max-width: 600px;
-}
-
-.hero .brand-logo {
-  width: 140px;
-  height: 140px;
-  margin-bottom: 2rem;
-}
-
-.hero .logo {
-  font-size: 2.75rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 1rem;
-}
-
-.hero .placeholder {
-  font-size: 1.1rem;
-  font-weight: 400;
-  opacity: 0.85;
-  border: 1px dashed rgba(255, 255, 255, 0.6);
-  border-radius: 8px;
-  padding: 16px 20px;
-  margin-top: 1.5rem;
-}
-
-/* Page layout */
-
-.page {
-  max-width: 880px;
-  margin: 0 auto;
-  padding: 64px 24px;
-}
-
-.page-title {
-  font-weight: 700;
-  font-size: 2.25rem;
-  color: var(--blue);
-  margin-bottom: 2rem;
-}
-
-.section {
-  margin-bottom: 3rem;
-}
-
-.placeholder-block {
-  border: 1px dashed var(--border);
-  border-radius: 12px;
-  padding: 32px;
-  color: var(--muted);
-  font-style: italic;
-}
-
-/* Service cards */
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 24px;
-}
-
-.card-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--border);
-  margin-bottom: 16px;
-}
-
-.card-title {
-  font-weight: 700;
-  color: var(--blue);
-  margin-bottom: 8px;
-}
-
-.card-desc {
-  color: var(--muted);
-  font-size: 0.95rem;
-  font-style: italic;
-}
-
-/* Contact page */
-
-.contact-detail {
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: var(--blue);
-  margin-bottom: 8px;
+  color: #ffffff;
 }
 
 @media (max-width: 480px) {
-  .hero .logo {
-    font-size: 2.1rem;
+  .logo {
+    font-size: 2.25rem;
   }
 
   .contact {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .site-footer .contact {
     display: flex;
     flex-direction: column;
     gap: 8px;
