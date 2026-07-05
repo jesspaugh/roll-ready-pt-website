@@ -222,10 +222,10 @@ a {
 }
 
 .eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.78rem;
-  font-weight: 700;
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 1.01rem;
+  font-weight: 400;
   color: var(--blue);
   margin-bottom: 14px;
 }
