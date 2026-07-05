@@ -16,5 +16,16 @@
     {{ content }}
   </main>
   {% include footer.html %}
+  <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.12.2/build/player/lottie.min.js"></script>
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('rr-logo-animation'),
+      renderer: 'svg',
+      loop: false,
+      autoplay: true,
+      path: '{{ "/assets/lottie/RR_logo_v1.json" | relative_url }}',
+      assetsPath: '{{ "/assets/lottie/images/" | relative_url }}'
+    });
+  </script>
 </body>
 </html>
