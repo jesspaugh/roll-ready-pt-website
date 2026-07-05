@@ -13,7 +13,7 @@
 <body>
   <main class="splash">
     <div class="content">
-      <img src="logo.svg" alt="Roll Ready PT logo" class="brand-logo">
+      <div id="rr-logo-animation" class="brand-logo" role="img" aria-label="Roll Ready PT logo animation"></div>
       <h1 class="logo">Roll Ready <span>PT</span></h1>
       <p class="tagline">Our new website is on its way.</p>
       <p class="subtext">Thanks for your patience — check back soon.</p>
@@ -25,5 +25,16 @@
       </div>
     </div>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.12.2/build/player/lottie.min.js"></script>
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('rr-logo-animation'),
+      renderer: 'svg',
+      loop: false,
+      autoplay: true,
+      path: 'assets/lottie/RR_logo_v1.json',
+      assetsPath: 'assets/lottie/images/'
+    });
+  </script>
 </body>
 </html>
