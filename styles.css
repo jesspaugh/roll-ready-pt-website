@@ -272,14 +272,6 @@ a {
   font-style: italic;
 }
 
-.booking-embed {
-  display: flex;
-  justify-content: center;
-  padding: 48px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-}
-
 /* Service cards */
 
 .card-grid {
@@ -313,10 +305,26 @@ a {
   margin-bottom: 8px;
 }
 
+.card-photo {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
 .card-desc {
   color: var(--muted);
   font-size: 0.95rem;
   line-height: 1.7;
+}
+
+.card-note {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-top: 12px;
 }
 
 .card-icon-blue {
@@ -342,10 +350,89 @@ a {
   background: var(--sand);
 }
 
+.bio-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.bio-header .section-title {
+  margin-bottom: 0;
+}
+
+.bio-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 5%;
+  flex-shrink: 0;
+}
+
+.credentials-title {
+  color: var(--blue);
+  margin: 24px 0 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
 .feature-list {
   padding-left: 20px;
   color: var(--muted);
   line-height: 1.7;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0 24px;
+  background: var(--white);
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 20px 0;
+  font-weight: 700;
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  flex: none;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--muted);
+  transition: transform 0.18s ease;
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  padding: 0 0 20px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.faq-answer p {
+  margin: 0;
 }
 
 .feature-list li + li {
@@ -412,6 +499,58 @@ a {
 
 .comparison-panel li + li {
   margin-top: 10px;
+}
+
+.timeline-heading {
+  margin: 24px 0 16px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.timeline-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.timeline-list li {
+  position: relative;
+  padding-left: 22px;
+}
+
+.timeline-list li + li {
+  margin-top: 14px;
+}
+
+.timeline-list li::before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--blue);
+}
+
+.timeline-list li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 17px;
+  bottom: -14px;
+  width: 2px;
+  background: var(--border);
+}
+
+.timeline-list strong {
+  display: block;
+  color: var(--ink);
 }
 
 .photo-grid {
@@ -629,6 +768,62 @@ a {
 
 .inquiry-form button:hover {
   background: #3560d6;
+}
+
+.pricing-table-wrap {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: auto;
+  margin-top: 24px;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pricing-table thead {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.pricing-table th {
+  padding: 16px 24px;
+  text-align: left;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pricing-table th:last-child {
+  text-align: center;
+}
+
+.pricing-table td {
+  padding: 20px 24px;
+  border-top: 1px solid var(--border);
+  text-align: left;
+}
+
+.pricing-table td:last-child {
+  text-align: center;
+}
+
+.pricing-table tbody tr:nth-child(even) {
+  background: var(--sand);
+}
+
+.pricing-table td strong {
+  display: block;
+  font-size: 1.15rem;
+  color: var(--ink);
+}
+
+.pricing-table td span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 2px;
 }
 
 @media (max-width: 640px) {

@@ -7,20 +7,22 @@ description: Learn about the clinician behind Roll Ready Physical Therapy and th
   <div class="eyebrow">About Me</div>
   <h1 class="page-title">Personalized physical therapy built around people, not rushed appointments.</h1>
 
-  <div class="section split-section">
+  <div class="section">
     <div class="bio-panel">
-      <h2 class="section-title">The person behind Roll Ready PT</h2>
+      <div class="bio-header">
+        <img class="bio-avatar" src="{{ '/images/with-a-patient.jpg' | relative_url }}" alt="Brian, the physical therapist behind Roll Ready PT">
+        <h2 class="section-title">The person behind Roll Ready PT</h2>
+      </div>
       <p>Roll Ready PT is designed for people who want focused, thoughtful care and a better understanding of their body.</p>
       <p>Brian built the practice around one idea: care should meet you where you already are, not add another errand to your day. That's why treatment often happens right at your gym &mdash; before or after class, between rounds, or at open mat.</p>
       <p>For more hands-on or private work, Brian also treats out of a pop-up van parked right in the gym lot.</p>
-    </div>
-    <div class="highlight-panel">
-      <h2 class="section-title">Where Brian treats</h2>
+      <h3 class="credentials-title">Credentials</h3>
       <ul class="feature-list">
-        <li>At the gym &mdash; before or after class, between rounds, or at open mat</li>
-        <li>Curbside in the pop-up van, parked in the gym lot</li>
-        <li>Currently at a handful of gyms, with more added regularly</li>
-        <li>Own a gym and want Brian on-site? <a href="{{ '/contact.html' | relative_url }}">Reach out on the Contact page</a> or send a text.</li>
+        <li>Doctor of Physical Therapy (DPT) &mdash; Creighton University, 2022</li>
+        <li>Certified Integrative Dry Needling Practitioner</li>
+        <li>1st Degree BJJ Black Belt &mdash; Marcelo Alonso, Carlson Gracie Team</li>
+        <li>Green Belt, Judo</li>
+        <li>3rd Degree Tae Kwon Do Black Belt</li>
       </ul>
     </div>
   </div>
@@ -34,6 +36,22 @@ description: Learn about the clinician behind Roll Ready Physical Therapy and th
       <figure class="photo-card">
         <img src="{{ '/images/brian-treating.jpg' | relative_url }}" alt="Brian treating a patient's leg on a treatment table at the gym">
         <figcaption>Treating a patient right at the gym</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="{{ '/images/mobile-van-parked.jpg' | relative_url }}" alt="The Roll Ready PT pop-up van parked outside a Brazilian Jiu-Jitsu academy">
+        <figcaption>The pop-up van, parked right at the gym</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="{{ '/images/van-treatment-candid.jpg' | relative_url }}" alt="Brian treating a patient inside the pop-up van between classes">
+        <figcaption>A session in progress, between classes</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="{{ '/images/hands-on-treatment.jpg' | relative_url }}" alt="Brian working on a patient's hand and wrist during a treatment session">
+        <figcaption>Hands-on treatment, one-on-one</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="{{ '/images/soft-tissue-work.jpg' | relative_url }}" alt="Brian performing soft tissue work on a patient's back">
+        <figcaption>Manual therapy tailored to the athlete</figcaption>
       </figure>
     </div>
   </div>
@@ -59,6 +77,8 @@ description: Learn about the clinician behind Roll Ready Physical Therapy and th
     </div>
   </div>
 
+  {% comment %}
+  Instagram feed section, hidden until it's wired up to a real feed (API + GitHub Actions refresh job).
   <div class="section">
     <div class="section-header">
       <div>
@@ -81,4 +101,5 @@ description: Learn about the clinician behind Roll Ready Physical Therapy and th
       <a class="instagram-tile" href="https://www.instagram.com/rollreadypt/" target="_blank" rel="noopener noreferrer"><span>Post 10</span></a>
     </div>
   </div>
+  {% endcomment %}
 </div>
