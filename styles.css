@@ -280,6 +280,16 @@ a {
   gap: 20px;
 }
 
+.card-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 640px) {
+  .card-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
 .card {
   border: 1px solid var(--border);
   border-radius: 12px;
